@@ -1,0 +1,425 @@
+/* Font 'Poppins' yang diambil dari google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header Start */
+header {
+    padding: 12px 10px;
+    width: 100%;
+    background-color: #E6B17E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 1px 1px 200px black;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header .nav-list nav ul {
+    display: flex;
+    gap: 1rem 1.5rem;
+    justify-content: center;
+}
+
+header .nav-list nav ul li {
+    list-style: none;
+    padding: 2px 15px;
+    border: 3px solid transparent;
+    border-radius: 999px;
+}
+
+header .nav-list nav ul li:hover {
+    background-color: #C56E33;
+}
+
+header .nav-list nav ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.menu-icon {
+    display: none;
+    margin-left: 10rem;
+}
+
+.menu-icon button, .social-media button {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+/* Header End */
+
+/* Content Start */
+
+/* Home */
+.content article.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    gap: 1rem 6rem;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to left bottom, #551e19, #6a2b1f, #803825, #95472a, #aa572e, #b66435, #c1713d, #cd7f45, #d38c53, #da9861, #e0a56f, #e6b17e);
+}
+
+.home .content-description {
+    width: 40vw;
+}
+
+.home .content-description h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    color: #551e19;
+}
+
+.home .content-description p {
+    margin: 1rem 0 2rem;
+    font-size: 1.2rem;
+}
+
+.home .content-description a {
+    padding: 15px 40px;
+    border-radius: 999px;
+    background-color: #C56E33;
+    border: 3px solid transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.home .content-description a:hover {
+    background-color: #eacfbd;
+    border: 3px solid #C56E33;
+    color: #C56E33;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.home .content-image {
+    width: 40%;
+    margin-top: 3rem;
+}
+
+.home .content-image img {
+    border-radius: 50px;
+}
+/* Home End */
+
+/* About */
+.content article.about {
+    width: 80%;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+}
+
+.content article.about .paragraph-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 3rem;
+}
+
+.content article.about .paragraph-1 img {
+    width: 400px;
+}
+
+.content article.about .paragraph-1 h2 {
+    color: #551e19;
+}
+
+.content article.about .paragraph-1 p {
+    margin-top: 1rem;
+}
+
+.content article.about .paragraph-2 {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem 3rem;
+    flex-direction: row-reverse;
+}
+
+.content article.about .paragraph-2 img {
+    width: 400px;
+}
+
+.content article.about .paragraph-2 h2 {
+    color: #551e19;
+}
+
+.content article.about .paragraph-2 p {
+    margin-top: 1rem;
+}
+/* About End */
+
+/* Service */
+.content article.service {
+    width: 80%;
+    margin: 0 auto 10rem;
+    padding-top: 6rem;
+}
+
+.content article.service h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #551e19;
+}
+
+.content article.service .service-container {
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    text-align: center;
+    gap: 2rem 3rem;
+}
+
+.content article.service .service-container h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.content article.service .service-container p {
+    margin-top: 1rem;
+    text-align: left;
+}
+/* Service End */
+
+/* Product */
+.content article.product {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+}
+
+.content article.product h2 {
+    margin-top: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #551e19;
+}
+
+.content article.product p {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.content article.product .container-product li {
+    transition: 1s;
+}
+
+.content article.product .container-product li:hover {
+    transform: scale(1.5);
+}
+
+.content article.product .container-product img {
+    height: 200px;
+}
+
+.content article.product .container-product h3 {
+    text-align: center;
+}
+
+.content article.product .container-product ul {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem 15rem;
+}
+
+.content article.product .container-product ul li {
+    list-style-type: none;
+}
+/* Product End */
+
+/* Content End */
+
+/* Aside Start */
+main aside {
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media {
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul {
+    padding: .5rem .5rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #e3c9b7;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+main aside .social-media li {
+    list-style-type: none;
+}
+
+main aside .social-media li.li-hover:hover {
+    transform: scale(1.2);
+}
+
+main aside .social-media ul.side-social {
+    display: none;
+}
+
+main aside .social-media ul.side-social.active {
+    display: block;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+/* Aside End */
+
+/* Footer */
+footer {
+    background-color: #e6b17e;
+    padding: 1rem;
+}
+
+footer p {
+    text-align: center;
+    font-weight: 700;
+}
+/* Footer End */
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    /* Dropdown */
+    header {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+    }
+
+    header .nav-list nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    header .nav-list.active nav ul {
+        display: block;
+    }
+
+    header .nav-list nav ul li {
+        margin-top: 2px;
+        padding: 5px 20px;
+    }
+    /* Dropdow End */
+
+    /* Mengubah tampilan pada page 1 Home */
+    .content article.home {
+        flex-direction: column-reverse;
+    }
+
+    .home .content-description h1 {
+        font-size: 2rem;
+    }
+
+    .home .content-description p {
+        font-size: 1rem;
+    }
+
+    .home .content-description {
+        margin-left: 1rem;
+        width: 80vw;
+    }
+
+    .home .content-image {
+        width: 50%;
+    }
+
+    .home .content-description h1 {
+        font-size: 2rem;
+    }
+
+    .home .content-description p {
+        font-size: 1rem;
+    }
+
+    /* Mengubah tampilan pada page 2 About */
+    .content article.about .paragraph-1 {
+        flex-direction: column;
+    }
+
+    .content article.about .paragraph-2 {
+        flex-direction: column;
+    }
+
+    .content article.about .paragraph-1 img {
+        width: 80%;
+    }
+
+    .content article.about .paragraph-2 img {
+        width: 80%;
+    }
+
+    /* Mengubah tampilan pada page 3 Service */
+    .content article.service h2 {
+        font-size: 1.5rem;
+    }
+
+    .content article.service .service-container {
+        flex-wrap: wrap;
+    }
+
+    .content article.service .service-container .service-3 {
+        margin-top: 2rem;
+    }
+
+    /* Mengubah tampilan pada page 4 Product */
+    .content article.product .container-product img {
+        height: 200px;
+    }
+
+    .content article.product h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Mengubah ukuran font pada footer */
+    footer p {
+        font-size: .7rem;
+    }
+}
